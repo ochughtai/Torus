@@ -55,13 +55,38 @@ class State {
 			state4 = new State(this.swap(zeroPos, ((zeroPos + 8) % 9)));
 		}
 			
+		//Determine natural ordering of states
+		
+		boolean done = false;
+		
+		while (!done) {
+			
+			for (int i = 0; i < 4; i++) {
+				
+			}
+			
+			
+		}
 		
 		// TO DO: get all four successors and return them in sorted order
 		
 		return successors;
 	}
+	
+	/*
+	 * Method to return state board in 9 digit integer form
+	 */
+	public String arrayToDigits(){
+		String digits;
+		for (int i = 0; i < this.board.length; i++) {
+			
+		}
+	}
+	
 
-	//Method to swap two array elements are the input indices
+	/*
+	 * Method to swap two array elements are the input indices
+	 */
 	public int[] swap(int index1, int index2) {
 		
 		//Copy board
